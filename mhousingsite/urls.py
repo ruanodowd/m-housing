@@ -1,5 +1,5 @@
 """
-URL configuration for meowhousing project.
+URL configuration for mhousingsite project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/5.0/topics/http/urls/
@@ -19,6 +19,6 @@ from django.urls import include, path
 
 
 urlpatterns = [
-    path("", include("meowapp.urls")),
+    path("", include("mhousingapp.urls")),
     path("admin/", admin.site.urls),
 ]
