@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha256-CjSoeELFOcH0/uxWu6mC/Vlrc1AARqbm/jiiImDGV3s=" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+
+</head>
+<body>
+<h1>Find housing near you</h1>
+<p>{{ text }}</p>
+<form action="/search" method="get">
+    <p>X coord of workplace: </p><input type="text" name="xcoord">
+    <p>Y coord of workplace: </p><input type="text" name="ycoord">
+    <p>Whole house
+        <input type="radio" name="housetype" value="RESIDENTIAL_RENT">
+       Sharing
+        <input type="radio" name="housetype" value="STUDENT_ACCOMMODATION">
+    </p>
+
+    <button type="submit">Search</button>
+</form>
+
+</body>
+</html>
